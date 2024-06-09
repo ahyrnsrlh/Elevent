@@ -104,38 +104,42 @@
       <div class="u-align-center u-border-1 u-border-white u-container-style u-dialog u-radius-5 u-shape-round u-white u-dialog-1">
         <div class="u-container-layout u-container-layout-1">
           <div class="u-expanded-width u-form u-form-1">
-            <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-19 u-form-vertical u-inner-form" style="padding: 0px;" source="email" name="form">
+            <form action="Inventory-added.php" method = "POST" enctype="multipart/form-data" class="u-clearfix u-form-spacing-19 u-form-vertical u-inner-form" style="padding: 0px;"name="form">
+              <div class="u-form-group u-form-group-1">
+                <label for="number" class="u-label">ID Produk</label>
+                <input type="number" placeholder="" id="number" name="idProduk" class="u-border-2 u-border-grey-25 u-input u-input-rectangle u-radius u-input-1" required="required">
+              </div>
               <div class="u-form-group u-form-group-1">
                 <label for="text-442e" class="u-label">Name</label>
-                <input type="text" placeholder="" id="text-442e" name="text" class="u-border-2 u-border-grey-25 u-input u-input-rectangle u-radius u-input-1" required="required">
+                <input type="text" placeholder="" id="text-442e" name="namaProduk" class="u-border-2 u-border-grey-25 u-input u-input-rectangle u-radius u-input-1" required="required">
               </div>
               <div class="u-form-group u-form-group-2">
                 <label for="text-e795" class="u-label">Total</label>
-                <input type="text" placeholder="" id="text-e795" name="text-1" class="u-border-2 u-border-grey-25 u-input u-input-rectangle u-radius u-input-2" required="required">
+                <input type="text" placeholder="" id="text-e795" name="total" class="u-border-2 u-border-grey-25 u-input u-input-rectangle u-radius u-input-2" required="required">
               </div>
               <div class="u-form-group u-form-group-5">
-                <label for="category" class="u-label">Status</label>
-                <select id="category" name="category" class="u-border-2 u-border-grey-25 u-input u-input-rectangle u-radius u-input-5" required="required">
-                  <option value="category1">Available</option>
-                  <option value="category2">Unavailable</option>
+                <label for="status" class="u-label">Status</label>
+                <select id="status" name="status" class="u-border-2 u-border-grey-25 u-input u-input-rectangle u-radius u-input-5" required="required">
+                  <option value="Available">Available</option>
+                  <option value="Unavailable">Unavailable</option>
                 </select>
                 </div>
               <div class="u-form-group u-form-group-3">
                 <label for="text-5406" class="u-label">Price</label>
-                <input type="text" placeholder="" id="text-5406" name="text-2" class="u-border-2 u-border-grey-25 u-input u-input-rectangle u-radius u-input-3" required="required">
+                <input typ="text" placeholder="" id="text-5406" name="harga" class="u-border-2 u-border-grey-25 u-input u-input-rectangle u-radius u-input-3" required="required">
               </div>
               <div class="u-form-group u-form-group-4">
                 <label for="upload-image" class="u-label">Upload Image</label>
-                <input type="file" id="upload-image" name="upload-image" class="u-border-2 u-border-grey-25 u-input u-input-rectangle u-radius u-input-4" required="required">
+                <input type="file" id="upload-image" name="image" class="u-border-2 u-border-grey-25 u-input u-input-rectangle u-radius u-input-4" required="required">
               </div>
               <div class="u-form-group u-form-group-5">
-                <label for="category" class="u-label">Category</label>
-                <select id="category" name="category" class="u-border-2 u-border-grey-25 u-input u-input-rectangle u-radius u-input-5" required="required">
-                  <option value="category1">Alat Pesta</option>
-                  <option value="category2">Sound System</option>
-                  <option value="category3">Tenda</option>
-                  <option value="category3">Panggung</option>
-                  <option value="category3">Multimedia</option>
+                <label for="idKategori" class="u-label">Category</label>
+                <select id="idKategori" name="idKategori" class="u-border-2 u-border-grey-25 u-input u-input-rectangle u-radius u-input-5" required="required">
+                  <option value="1">Alat Pesta</option>
+                  <option value="2">Sound System</option>
+                  <option value="3">Tenda</option>
+                  <option value="4">Panggung</option>
+                  <option value="5">Multimedia</option>
                 </select>
               <div class="u-align-left u-form-group u-form-submit u-form-group-6">
                 <a href="#" class="u-btn u-btn-round u-btn-submit u-button-style u-custom-color-3 u-radius-5 u-btn-1">Add</a>
