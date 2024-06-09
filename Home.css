@@ -1908,4 +1908,13 @@
   .u-section-5 .u-image-3 {
     margin-left: 171px;
   }
+
+  .arrow-link {
+    cursor: pointer; /* Ubah kursor menjadi tangan saat dihover, menandakan elemen bisa diklik */
+  }
+  
+  .arrow-link:hover {
+    text-decoration: underline; /* Beri garis bawah saat elemen dihover */
+  }
+  
 }
